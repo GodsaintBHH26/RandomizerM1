@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Sketch&family=Sixtyfour+Convergence&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Sketch&family=Protest+Strike&family=Sixtyfour+Convergence&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    color: white;
+    background-clip: border-box;
+}
+
+.header-css{
+    border-radius: 5px;
+    padding: 1px;
+    margin: 0px;
+    text-align: center;
+    background-color: rgb(104, 2, 46);
+    box-shadow: 0px 0px 15px rgb(255, 0, 0);
+}
+.header-box-css a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-shadow:0px 0px 5px rgb(6, 1, 97);
+    font-family: "Sixtyfour Convergence", sans-serif;
+}
+
+.cs-body{
+    background-color: black;
+    opacity: 80%;
+    padding: 15px 5px;
+}
+.cs-text{
+    text-align: center;
+    text-transform: capitalize;
+    font-family: "Londrina Sketch", sans-serif;
+    font-weight: bold;
+    font-size: 45px;
+    color: yellow;
+    text-shadow:0px 0px 4px rgb(208, 255, 0);
+}
+
+.cs-button{
+    text-align: center;
+}
+.cs-button button{
+    border:none;
+    font-weight: lighter;
+    font-family: "Protest Strike", sans-serif;
+    text-transform: capitalize;
+    font-size: 25px;
+    color: white;
+    background-color: rebeccapurple;
+    padding: 1rem;
+    border-radius: 4px;
+    box-shadow:0px 0px 5px rgb(208, 208, 208);
+}
+.cs-button button:hover{
+    box-shadow:0px 0px 15px rgb(126, 123, 123);
+    font-weight: bold;
+}
