@@ -1,29 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Randomizer</title>
-    <link rel="stylesheet" href="/style/homepage.css">
+    <link rel="stylesheet" href="/style/homepage.css" />
     <script src="/scripts/homepage.js"></script>
-</head>
-<body>
-    <div class="header-css"> 
-        <h1>Randomizer</h1>
+  </head>
+  <body>
+    <div class="header-css">
+      <h1>Randomizer</h1>
     </div>
 
     <div class="hero-css hero-js">
-        <div class="wheel">
+      <div class="wheel"></div>
+      <input
+        type="text"
+        name="inp"
+        id="inp"
+        placeholder="Enter your elements here"
+      />
+      <button type="button" onclick="clearStorage();">CLear Queue</button><br /><br />
+      <button
+        onclick="
+        addToQue();"
+        type="button"
+      >
+        Add
+      </button>
+      <button onclick="
+      display();
+      " type="button">Randomize</button> <br><br>
 
-        </div>
-        <input type="text" name="inp" id="inp" placeholder="Enter your elements here"><br><br>
-        <button onclick="">Add to the wheel</button>
-        <button onclick="">Randomize</button>
+      <p class="result">The result will be shown here.</p>
     </div>
 
-    <div class="footer-css">
-
-    </div>
-    
-</body>
+    <div class="footer-css"></div>
+  </body>
 </html>
