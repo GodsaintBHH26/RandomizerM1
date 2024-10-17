@@ -8,33 +8,59 @@
     <script src="/scripts/homepage.js"></script>
   </head>
   <body>
-    <div class="header-css">
-      <h1>Randomizer</h1>
+    <div class="video-background">
+      <video autoplay muted loop id="background-video">
+        <source src="videos/spacenebulavid.mp4" type="video/mp4" />
+      </video>
+
+      <div class="site-content">
+        <div class="header-css">
+          <h1>Randomizer</h1>
+        </div>
+
+        <div class="hero-css hero-js">
+          <div class="wheel"></div>
+
+          <div class="input">
+            <input
+              type="text"
+              name="inp"
+              id="inp" class="inp-cs"
+              placeholder="Enter your elements here"
+            />
+            <button type="button" onclick="clearStorage();" id="clear">CLear Queue</button>
+          </div>
+
+          <br /><br />
+          <div class="buttons">
+            <button
+              onclick="
+            addToQue();"
+              type="button" id="add"
+            >
+              Add
+            </button>
+            <button
+              onclick="
+          display();
+          "
+              type="button" id="random"
+            >
+              Randomize
+            </button>
+          </div>
+
+          <br /><br />
+
+          <p class="result">The result will be shown here.</p>
+        </div>
+
+        <div class="object-table-js object-table-cs">
+
+        </div>
+
+        <div class="footer-css"></div>
+      </div>
     </div>
-
-    <div class="hero-css hero-js">
-      <div class="wheel"></div>
-      <input
-        type="text"
-        name="inp"
-        id="inp"
-        placeholder="Enter your elements here"
-      />
-      <button type="button" onclick="clearStorage();">CLear Queue</button><br /><br />
-      <button
-        onclick="
-        addToQue();"
-        type="button"
-      >
-        Add
-      </button>
-      <button onclick="
-      display();
-      " type="button">Randomize</button> <br><br>
-
-      <p class="result">The result will be shown here.</p>
-    </div>
-
-    <div class="footer-css"></div>
   </body>
 </html>

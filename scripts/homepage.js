@@ -1,4 +1,3 @@
-
 // Initializing the array
 let randQue = [];
 
@@ -13,6 +12,7 @@ function addToQue() {
   randQue.push(ele);
   saveToStorage();
   console.log(randQue);
+  table();
 }
 
 // Function that saves all the data of the array to the local storage
@@ -37,5 +37,19 @@ function randomix(){
 // Function to display the randomizer output
 function display(){
     let op = randomix();
-    document.querySelector('.result').innerHTML = `Randomized object =  ${op}`;
+    document.querySelector('.result').innerHTML = `${op}`;
+}
+
+// Function to display all the added contents in the wheel
+function table(){
+
+  let tableHTML = "";
+  randQue.forEach((content)=>{
+    tableHTML += `
+    <div class="table-ele">
+    <p>${content}</p>
+    </div>
+    `;
+  });
+  document.querySelector('.object-table-js').innerHTML = tableHTML;
 }
